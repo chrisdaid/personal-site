@@ -1,0 +1,154 @@
+html {
+    /* min-width: 100vw;
+    min-height: 100vh;  */
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+/* background  */
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blue-bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(assets/update.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+    pointer-events: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    user-select: none;
+}
+
+/* container for greeting and description + signature */
+
+.center-container {
+    position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+    min-width: 450px;
+    max-width: 768px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.greeting {
+    margin: 0;
+    margin-top: 120px;
+    width: 450px;
+    height: 100%;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+/* signatures */
+
+.center-container svg {
+    height: 100px;
+    transform: scale(1.5);
+    padding: 28px 20px 20px 20px;
+    position: absolute;
+}
+
+ #black-sig {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 555;
+    animation: sign 2.5s ease-in-out;
+    animation-fill-mode: forwards;
+} 
+
+
+#white-sig {
+    stroke-dasharray: 355;
+    stroke-dashoffset: 355;
+    animation: sign 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* description "front-end dev / web dev" */
+
+.description {
+    width: 295px;
+    height: 20px;
+    margin-top: 150px;
+    padding: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+/* divider */
+.divider {
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(255,0,0,0.3);
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    width: 10px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.down-arrow {
+    transform-origin: center;
+    transform: rotate(180deg);
+    color: white;
+    padding: 8px;
+}
+
+
+/* ParticlesJS */
+
+#particles-js {
+    position: flex;
+    background-color: white; 
+    height: 100vh;
+    width: 100vw;
+}
+
+
